@@ -3,10 +3,10 @@
 
    NOTE: This is my 2nd 'Hello, world!' C# program...
 
-         The program uses 2 command line arguments each called: arg[0],arg[1]; 
+         The program uses 2 command line arguments each called: args[0],args[1]; 
          both arguments will need to be entered from the user keyboard;
          the program is first run inside of a MS DOS prompt box by typing:
-         hw02 "one" "two"
+         hw02 one two
          ...the output displays as...
          Hello, world! one two
 
