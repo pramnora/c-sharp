@@ -4,7 +4,7 @@ using System;
  Maths Demo: The use of C# code modules...
 */
 
-namespace caModules01
+namespace caModules01 //console application
 {
     class Program
     {
