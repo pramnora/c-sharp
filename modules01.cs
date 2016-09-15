@@ -1,7 +1,10 @@
 using System;
 
 /*
- Maths Demo: The use of C# code modules...
+ Created: 150916 17:46 PM GMT
+ Updated: 150916 17:46 PM GMT
+ Language: C#/Visual Studio 2015/Community Edition (FREE)
+ Program: Simple Maths Demo/Illustrating the use of C# code modules
 */
 
 namespace caModules01 //console application
