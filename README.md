@@ -2,6 +2,8 @@
 
 The C# programming language, I use in conjuction with Microsoft Visual Studio software.
 
+The file extension of C# code is: [.cs].
+
 -----
 
 20th June 2022 02:59 AM GMT
