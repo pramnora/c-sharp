@@ -1,0 +1,131 @@
+using System;
+
+/*
+ * This code is borrowed from...
+ * YoUTube Channel:Traversy Media
+ * Build a C# .NET Application in 60 Minutes 
+ * https://www.youtube.com/watch?v=GcFJjpMFJvI
+ * --------------------------------------------------
+ * Computer(Home): Desktop PC/Windows 10 Professional
+ * visual Studio 2019 - FREE Community Edition
+ * --------------------------------------------------
+ * Created: 190622 13:07 PM GMT
+ * Updated: 190622 13:07 PM GMT
+ */
+
+
+//*** Namespace...
+namespace YouTubeLesson01
+{
+    //*** Main class...
+    class Program
+    {
+        //*** Entry point Method...
+        static void Main(string[] args)
+        {
+
+            GetAppInfo();
+            GreetUser();
+
+            while (true) { 
+
+                //*** Create a new Random object...
+                Random random = new Random();
+
+                //*** Set a random number...
+                int correctNumber = random.Next(1,10);
+
+                //*** init guess var...
+                int guess = 0;
+                Console.WriteLine("Guess a number between 1 to 10");
+
+                //*** While guess is not correct...
+                while(guess != correctNumber)
+                {
+                    //*** Get users input...
+                    string input = Console.ReadLine();
+ 
+                    //*** Make sure it's a number...
+                    if (!int.TryParse(input, out guess)) 
+                    {
+                        PrintColourMessage(ConsoleColor.Red,"Please, use an actual number...");
+                        //*** Keep going...
+                        continue;
+                    }//...end if
+
+                    //*** Cast to int and put in guess...
+                    guess = Int32.Parse(input);
+
+                    //*** Match guess to correct number...
+                    if (guess != correctNumber)
+                    {
+                        PrintColourMessage(ConsoleColor.Red, "Wrong number, please try again...");
+                    } else {
+                        PrintColourMessage(ConsoleColor.Yellow, "You are CORRECT!!!");
+                    } //...end if
+
+
+                } //...end while (guess != correctNumber)
+
+                //*** Ask to play again...
+                Console.WriteLine("Play, again? [Y or N]");
+                //*** Get answer...
+                string answer = Console.ReadLine().ToUpper();
+                //*** Check answer...
+                if (answer == "Y")
+                {
+                    continue;
+                }
+                else if (answer == "N")
+                {
+                    return;
+                }
+                else
+                {
+                    return;
+                } //...end if
+
+
+            } //...end while (true)
+
+
+        }//...end main
+
+        //*** Methods...
+
+        static void GetAppInfo()
+        {
+            //*** Set app vars...
+            string appName = "Number Guesser";
+            string appVersion = "1.0.0";
+            string appAuthor = "Paul Ramnora";
+
+            //*** Change text colour...   
+            Console.ForegroundColor = ConsoleColor.Green;
+            //*** Write out app info... 
+            Console.WriteLine("{0} Version {1} by {2}.", appName, appVersion, appAuthor);
+            //*** Reset text color
+            Console.ResetColor();
+        }
+
+        static void GreetUser() { 
+            //*** Ask users name...
+            Console.WriteLine("What is your name?");
+            //*** Get user input...
+            string inputName = Console.ReadLine();
+            //*** 
+            Console.WriteLine("Hello {0}, let's play a game...",inputName);
+        }
+
+        static void PrintColourMessage(ConsoleColor color, string message)
+        {
+            //*** Change text colour...   
+            Console.ForegroundColor = color;
+            //*** Print message... 
+            Console.WriteLine(message);
+            //*** Reset text color...
+            Console.ResetColor();
+        }
+
+    }//...end class
+}//...end namespace
