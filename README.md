@@ -14,6 +14,6 @@ NOTE: I'm about to delete Visual Studio 2019...; then, download/and, use, instea
 
 ## Links...
 
-You can download the FREE Community edition of Visual Studio.
+Download the FREE Community edition of Visual Studio...
 
 - https://visualstudio.microsoft.com/
