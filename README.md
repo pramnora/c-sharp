@@ -1,8 +1,13 @@
-# c#
-c#, is a language I use in conjuction with Microsoft Visual Studio software.
+# C# Programming language
 
-The current version of Microsoft Visual Studio I'm using is: Visual Studio 2019.
+The C# programming language, I use in conjuction with Microsoft Visual Studio software.
 
-**NOTE:** It's possible to download the FREE Community edition of Visual Studio.
+The current version of Microsoft Visual Studio which I'm using is: Visual Studio 2019.
 
-https://visualstudio.microsoft.com/
+-----
+
+## Links...
+
+You can download the FREE Community edition of Visual Studio.
+
+- https://visualstudio.microsoft.com/
